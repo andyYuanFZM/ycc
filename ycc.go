@@ -48,12 +48,10 @@ serverStart=true
 
 [p2p.sub.dht]
 #dht 版本还不稳定，暂时限定较小的连接数
-maxConnectNum = 50
+maxConnectNum = 100
 # 是否配置为全节点模式，全节点保存所有分片数据，种子节点应配置为true
 # 全节点可以切换为分片节点，暂不支持分片节点切换为全节点
 isFullNode = true
-# 兼容老版本广播节点数，目前比特元网络已基本全面升级6.5.3，新版本不再支持广播发送至老版本
-# 设为1为屏蔽默认设置5
 maxBroadcastPeers = 1
 
 [p2p.sub.dht.pubsub]
@@ -93,21 +91,21 @@ poolCacheSize = 1024000
 name="pos33"
 minerstart=true
 genesisBlockTime=1652797628
-genesis="0xf39e69a8f2c1041edd7616cf079c7084bb7a5242"
+genesis="0xd9b733c4076d694a5bc15207beff3163a0050ebc"
 minerExecs=["pos33"]
 
 [consensus.sub.pos33]
 onlyVoter = false
 
 [[consensus.sub.pos33.genesis]]
-minerAddr="0x991fb09dc31a44b3177673f330c582ac2ea168e0"
-returnAddr="0xf39e69a8f2c1041edd7616cf079c7084bb7a5242"
-blsAddr="0x6da47c11230e44adb384fed56554bfd55dde1750"
+minerAddr="0x4a146bb3aac5ee76264d7e7e58327be78fc341bb"
+returnAddr="0x96e9c90e55c816ce8f8dd1cf5545688880c01a62"
+blsAddr="0xaaa9f8b87a0e78c9b18d1bfd7c4fbeec55992add"
 count=1000
 
 [mver.consensus]
 addWalletTx = false
-fundKeyAddr = "0x92dd51393c77fd07c5840ae28076b7e0f072c289"
+fundKeyAddr = "0x3ad7e1394681143a8a24d1c60c71a8f770cb0ae8"
 maxTxNumber = 30000
 powLimitBits = "0x1f00ffff"
 
@@ -116,8 +114,8 @@ ticketPrice1=10000
 ticketPrice2=100000
 minerFeePersent=10 
 rewardTransfer=1
-blockReward=15
-voteRewardPersent=25
+blockReward=5
+voteRewardPersent=10
 mineRewardPersent=11
 
 [store]
@@ -156,7 +154,7 @@ tkCloseCacheLen = 200000
 enableTypes = ["secp256k1", "none", "bls", "secp256k1eth"]
 
 [crypto.sub.secp256k1eth]
-evmChainID=3999
+evmChainID=6999
 
 [wallet]
 dbCache = 16
@@ -191,7 +189,7 @@ genesis="0x6b0a9bdf4d994c359fe02a74b538cf3f27b83f0a"
 
 [exec.sub.manage]
 superManager=[
-    "0xf27a1b1a548b7bf380c5011364670b5218edc54b", 
+    "0x467b11ac4663a582f3798bc6e379f0ff57edadaf",
 ]
 
 [exec.sub.paracross]
@@ -297,7 +295,7 @@ ForkFormatAddressKey=0
 
 [fork.sub.coins]
 Enable=0
-ForkFriendExecer=4864713
+ForkFriendExecer=0
 
 [fork.sub.pos33]
 Enable=0
