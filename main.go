@@ -22,5 +22,5 @@ func main() {
 	if *percent > 0 {
 		debug.SetGCPercent(*percent)
 	}
-	cli.RunChain33("ycc", yccconfig)
+	cli.RunChain33("gls", glsconfig)
 }

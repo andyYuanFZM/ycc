@@ -1,7 +1,7 @@
 package main
 
-//ycc 这部分配置随代码发布，不能修改
-var yccconfig = `
+//gls 这部分配置随代码发布，不能修改
+var glsconfig = `
 TxHeight = true
 FixTime = false
 
@@ -176,7 +176,7 @@ friendExecer=["evm"]
 
 [exec.sub.evm]
 ethMapFromExecutor="coins"
-ethMapFromSymbol="ycc"
+ethMapFromSymbol="gls"
 addressDriver="eth"
 
 
