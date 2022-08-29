@@ -100,7 +100,7 @@ onlyVoter = false
 [[consensus.sub.pos33.genesis]]
 minerAddr="0x4a146bb3aac5ee76264d7e7e58327be78fc341bb"
 returnAddr="0x96e9c90e55c816ce8f8dd1cf5545688880c01a62"
-blsAddr="0xaaa9f8b87a0e78c9b18d1bfd7c4fbeec55992add"
+blsAddr="0x438b0fa0b2a76d21e7932f53e91ec8803229b8b4"
 count=1000
 
 [mver.consensus]
