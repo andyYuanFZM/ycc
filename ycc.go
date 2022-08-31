@@ -110,13 +110,13 @@ maxTxNumber = 30000
 powLimitBits = "0x1f00ffff"
 
 [mver.consensus.pos33]
-ticketPrice1=10000
-ticketPrice2=100000
+ticketPrice1=3000
+ticketPrice2=3000
 minerFeePersent=10 
 rewardTransfer=1
 blockReward=5
-voteRewardPersent=10
-mineRewardPersent=11
+voteRewardPersent=1
+mineRewardPersent=3
 
 [store]
 dbCache = 256
@@ -177,8 +177,8 @@ friendExecer=["evm"]
 [exec.sub.evm]
 ethMapFromExecutor="coins"
 ethMapFromSymbol="gls"
+evmGasLimit=1
 addressDriver="eth"
-
 
 [exec.sub.token]
 saveTokenTxList = false
